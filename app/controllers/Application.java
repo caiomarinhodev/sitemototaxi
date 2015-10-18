@@ -1,12 +1,10 @@
 package controllers;
 
-import models.Usuario;
 import play.db.jpa.Transactional;
-import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
-import play.mvc.Results;
 import views.html.index;
+import views.html.splay;
 
 public class Application extends Controller {
 
@@ -16,7 +14,7 @@ public class Application extends Controller {
     }
 
     @Transactional
-    public static Result splay(){
+    public static Result splay() {
         return ok(splay.render());
     }
 
