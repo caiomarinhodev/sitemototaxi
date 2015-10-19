@@ -5,6 +5,8 @@
 # Home page
 GET         /                    controllers.Application.index()
 GET         /splay               controllers.Application.splay()
+GET         /app                 controllers.Application.index_app()
+
 
 POST        /                    controllers.Application.index()
 

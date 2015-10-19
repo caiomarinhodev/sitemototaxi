@@ -59,7 +59,8 @@
                                 <li class="page-scroll"><a href="#fea" class="scroll">App</a></li>
                                 <li class="page-scroll"><a href="#gallery" class="scroll">Galeria</a></li>
                                 <li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">
-                                    Contato</a></li>
+                                    Contato</a>
+                                </li>
                             </ul>
                             <a href="#" id="pull"><img src="/assets/images/nav-icon.png" title="menu" /></a>
                         </nav>
@@ -70,7 +71,7 @@
                 <!----- //End-header---->
                 <!----- start-slider---->
                 <!----start-slider-script---->
-            <script src="js/responsiveslides.min.js"></script>
+            <script src="/assets/js/responsiveslides.min.js"></script>
             <script>
             // You can also use "$(window).load(function() {"
             $ ( function ( ) {
@@ -100,7 +101,7 @@
                         <div class="caption text-center">
                             <div class="slide-text-info">
                                 <h1><span>Click Mototaxi</span> é grátis!</h1>
-                                <h2>O aplicativo que chama o mototaxista</h2><h2> mais perto de você.</h2>
+                                <h2>O aplicativo que chama o mototaxista</h2> <h2> mais perto de você.</h2>
                                 <br/>
                                 <h2>Ligar no radio taxi é coisa do passado.</h2>
                                 <h2>Veja os mototáxis nos arredores</h2>
@@ -109,7 +110,8 @@
                                 <div class="clearfix"> </div>
                                 <div class="big-btns">
                                     <center>
-                                        <a class="download" href="#"><label> </label>Download</a>
+                                        <a class="download" href="https://play.google.com/store/apps/details?id=com.taxicg.clickmototaxi"><label> </label>
+                                            Download</a>
                                     </center>
                                 </div>
                             </div>
@@ -167,12 +169,12 @@
                                 <!--<div class="clearfix"> </div>-->
                         </div>
 
-                    </div><!---end-features-grid---->
+                    </div> <!---end-features-grid---->
                     <div class="col-md-4 features-grid">
                         <div class="big-divice">
                             <img src="/assets/images/divice.png" title="features-demo" />
                         </div>
-                    </div><!---end-features-grid---->
+                    </div> <!---end-features-grid---->
                     <div class="col-md-4 features-grid">
                         <div class="features-grid-info">
                             <div class="col-md-2 features-icon1">
@@ -205,7 +207,7 @@
                                 <!--<div class="clearfix"> </div>-->
                         </div>
 
-                    </div><!---end-features-grid---->
+                    </div> <!---end-features-grid---->
                     <div class="clearfix"> </div>
                 </div>
             </div>
@@ -223,8 +225,8 @@
                 <!----sreen-gallery-cursual---->
             <div class="sreen-gallery-cursual">
                     <!-- requried-jsfiles-for owl -->
-                <link href="css/owl.carousel.css" rel="stylesheet">
-                <script src="js/owl.carousel.js"></script>
+                <link href="/assets/css/owl.carousel.css" rel="stylesheet">
+                <script src="/assets/js/owl.carousel.js"></script>
                 <script>
                 $ ( document ).ready ( function ( ) {
                 $ ( "#owl-demo" ).owlCarousel ( {
@@ -272,7 +274,7 @@
             <!---//pop-up-box---->
         <div class="show-reel text-center">
             <div class="container">
-                <h5>VIDEO  <a class="popup-with-zoom-anim" href="#small-dialog"><span> </span></a> PROMO</h5>
+                <h5>VIDEO <a class="popup-with-zoom-anim" href="#small-dialog"><span> </span></a> PROMO</h5>
                 <div id="small-dialog" class="mfp-hide">
                     <iframe width="600" height="480" src="https://www.youtube.com/embed/gXeJ5BS4iDM" frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -379,6 +381,37 @@
 
                     $ ( ).UItoTop ( { easingType : 'easeOutQuart' } ) ;
 
+                    } ) ;
+                    </script>
+
+                    <script type="text/javascript">
+                    $ ( document ).ready ( function ( ) {
+                    function detectmob ( ) {
+                    if ( navigator.userAgent.match ( /Android/i )
+                    || navigator.userAgent.match ( /webOS/i )
+                    || navigator.userAgent.match ( /iPhone/i )
+                    || navigator.userAgent.match ( /iPad/i )
+                    || navigator.userAgent.match ( /iPod/i )
+                    || navigator.userAgent.match ( /BlackBerry/i )
+                    || navigator.userAgent.match ( /Windows Phone/i )
+                    ) {
+                    return true ;
+                    }
+                    else {
+                    return false ;
+                    }
+                    }
+                    function detectmob2 ( ) {
+                    if ( window.innerWidth <= 800 && window.innerHeight <= 600 ) {
+                    return true ;
+                    } else {
+                    return false ;
+                    }
+                    }
+
+                    if ( detectmob ( ) || detectmob2 ( ) ) {
+                    window.location.assign ( "http://www.clickmototaxi.com/app" ) ;
+                    }
                     } ) ;
                     </script>
                     <script src="/assets/js/click.js"></script>
