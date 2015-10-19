@@ -462,6 +462,7 @@ nav a#pull {
 	position: absolute;
 	bottom: 0px;
 	z-index: 999;
+    top: 20%;
 	right: 10%;
 }
 .header-section{
@@ -875,6 +876,7 @@ p.copy a:hover{
 	}
 	.divice-demo{
 		right: 5%;
+        top: 20%;
 		text-align: right;
 	}
 	.big-divice img{

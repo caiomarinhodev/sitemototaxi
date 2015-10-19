@@ -6,6 +6,36 @@
         <link rel="shortcut icon" href="/assets/images/fav.png" />
             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="/assets/js/jquery.min.js"></script>
+        <script type="text/javascript">
+        $ ( document ).ready ( function ( ) {
+        function detectmob ( ) {
+        if ( navigator.userAgent.match ( /Android/i )
+        || navigator.userAgent.match ( /webOS/i )
+        || navigator.userAgent.match ( /iPhone/i )
+        || navigator.userAgent.match ( /iPad/i )
+        || navigator.userAgent.match ( /iPod/i )
+        || navigator.userAgent.match ( /BlackBerry/i )
+        || navigator.userAgent.match ( /Windows Phone/i )
+        ) {
+        return true ;
+        }
+        else {
+        return false ;
+        }
+        }
+        function detectmob2 ( ) {
+        if ( window.innerWidth <= 800 && window.innerHeight <= 600 ) {
+        return true ;
+        } else {
+        return false ;
+        }
+        }
+
+        if ( detectmob ( ) || detectmob2 ( ) ) {
+        window.location.assign ( "http://www.clickmototaxi.com/app" ) ;
+        }
+        } ) ;
+        </script>
             <!---- start-smoth-scrolling---->
         <script type="text/javascript" src="/assets/js/move-top.js"></script>
         <script type="text/javascript" src="/assets/js/easing.js"></script>
@@ -103,7 +133,7 @@
                                 <h1><span>Click Mototaxi</span> é grátis!</h1>
                                 <h2>O aplicativo que chama o mototaxista</h2> <h2> mais perto de você.</h2>
                                 <br/>
-                                <h2>Ligar no radio taxi é coisa do passado.</h2>
+                                <h2>Ligar no radio mototáxi é coisa do passado.</h2>
                                 <h2>Veja os mototáxis nos arredores</h2>
                                 <h2>e não espere mais num ponto de mototáxi.</h2>
                                 <br/>
@@ -115,16 +145,22 @@
                                     </center>
                                 </div>
                             </div>
+
                         </div>
+                            <!-----divice----->
+                        <div class="divice-demo">
+                            <img src="/assets/images/device_hand.png" title="demo" />
+                        </div>
+                            <!---//divice----->
                     </li>
                 </ul>
             </div>
             <div class="clearfix"> </div>
-                <!-----divice----->
-            <div class="divice-demo">
-                <img src="/assets/images/device_hand.png" title="demo" />
-            </div>
-                <!---//divice----->
+                @*<!-----divice----->*@
+            @*<div class="divice-demo">*@
+                @*<img src="/assets/images/device_hand.png" title="demo" />*@
+            @*</div>*@
+                @*<!---//divice----->*@
                 <!----- //End-slider---->
         </div>
             <!-----//header-section----->
@@ -154,7 +190,7 @@
                             </div>
                             <div class="col-md-10 features-info">
                                 <h4>Atendimento Rápido</h4>
-                                <p>Com nossos serviços 24h, temos velocidade no atendimento, e o cliente não perde tempo esperando po central de mototaxi.</p>
+                                <p>Com nossos serviços 24h, temos velocidade no atendimento, e o cliente não perde tempo esperando no central de mototáxi.</p>
                             </div>
                             <div class="clearfix"> </div>
                         </div>
@@ -384,36 +420,6 @@
                     } ) ;
                     </script>
 
-                    <script type="text/javascript">
-                    $ ( document ).ready ( function ( ) {
-                    function detectmob ( ) {
-                    if ( navigator.userAgent.match ( /Android/i )
-                    || navigator.userAgent.match ( /webOS/i )
-                    || navigator.userAgent.match ( /iPhone/i )
-                    || navigator.userAgent.match ( /iPad/i )
-                    || navigator.userAgent.match ( /iPod/i )
-                    || navigator.userAgent.match ( /BlackBerry/i )
-                    || navigator.userAgent.match ( /Windows Phone/i )
-                    ) {
-                    return true ;
-                    }
-                    else {
-                    return false ;
-                    }
-                    }
-                    function detectmob2 ( ) {
-                    if ( window.innerWidth <= 800 && window.innerHeight <= 600 ) {
-                    return true ;
-                    } else {
-                    return false ;
-                    }
-                    }
-
-                    if ( detectmob ( ) || detectmob2 ( ) ) {
-                    window.location.assign ( "http://www.clickmototaxi.com/app" ) ;
-                    }
-                    } ) ;
-                    </script>
                     <script src="/assets/js/click.js"></script>
                     <a href="#" id="toTop" style="display : block ;"> <span id="toTopHover" style="opacity : 1 ;"> </span></a>
                 </div>
